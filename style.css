@@ -1,3 +1,7 @@
 div {
   padding:1%
 }
+
+.row {
+  border-style: solid
+}

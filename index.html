@@ -2,8 +2,11 @@
 <html>
   <head>
     <title>Your Local Weather</title>
-    <meta name="viewport" content="initial-scale=1.0, user-scalable=yes">
     <meta charset="utf-8">
+
+    <!--Load bootstrap css, needed for grid layout-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
@@ -16,12 +19,29 @@
 
 
   <body>
-    <h1>Weather for:</h1>
+    <h1>Weather Conditions</h1>
 <!--Load weather conditions from script.js-->
-<div id="local-location"></div>
-<div id="local-sky"></div>
-<div id="local-weather"></div>
-<div id="astronomy"></div>
+<div class="row">
+<div class="col-md-6">
+  <h2 class="text-center">Location</h2>
+  <div id="local-location"></div>
+</div>
+<div class="col-md-6">
+  <h2 class="text-center">Sky</h2>
+  <div id="local-sky"></div>
+</div>
+</div> <!--end top row-->
+
+<div class="row">
+<div class="col-md-6">
+  <h2 class="text-center">Current Conditions</h2>
+  <div id="local-weather"></div>
+</div>
+<div class="col-md-6">
+  <h2 class="text-center">Sunrise and Sunset</h2>
+  <div id="astronomy"></div>
+</div>
+</div> <!--end top row-->
 
 <script src="script.js"></script>
 
